@@ -124,26 +124,28 @@ img {
   |============================
 */
 .logo {
+  /* TODO Отут додати обнулення LINK */
+  color: var(--logo-header-color);
+
   font-family: raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
 }
 
-.header-logo {
-  color: var(--logo-header-color);
+.logo__accent {
+  color: var(--accent-color);
+}
+
+.header-page__logo {
   margin-right: 93px;
 }
 
-.footer-logo {
+.footer-page__logo {
   margin-bottom: 20px;
   display: inline-block;
 
   color: var(--primary-white-color);
-}
-
-.logo-accent {
-  color: var(--accent-color);
 }
 
 /**

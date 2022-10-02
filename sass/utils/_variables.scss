@@ -1,0 +1,53 @@
+$colors: (
+    'primary-text': #757575,
+    'title-text': #212121,
+    'accent': #2196f3,
+    'logo-header': #000000,
+    'primary-white': #ffffff,
+    'primary-color': #afb1b8,
+    'footer-text': rgb(255 255 255 / 0.6),
+    'primary-background': #ffffff,
+    'second-background': #f5f4fa,
+    'dark-background': #2f303a,
+    'border-header': #ececec,
+    'border-portfolio-border': #eeeeee,
+);
+
+// getColor('accent');
+@function getColor($key) {
+  @return map-get($colors, $key);
+};
+
+$shadows: (
+    'shadow-card-team': '0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),  0px 2px 1px rgba(0, 0, 0, 0.2)',
+    
+    'shadow-portfolio-card': '0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16)',
+    
+    'shadow-btn-filter': '0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12)',
+    
+    'shadow-btn-hero': '0px 4px 4px rgba(0, 0, 0, 0.15)',
+    
+    'shadow-modal-windows': '0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2)',
+);
+
+@function getShadow($key) {
+  @return map-get($shadows, $key);
+};
+
+$primary-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+$primary-duration: 250ms;
+  
+$count-items: 3;
+$primary-indent: 30px;
+
+$padding-container: 15px;
+$padding-section: 94px;
+$width-container: 1200px;
+
+$primary-border-radius: 4px;
+
+$hero-background-gradient: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+$hero-background-image: url(../images/hero-background.jpg);
+
+
+  

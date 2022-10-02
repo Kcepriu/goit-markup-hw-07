@@ -1,0 +1,32 @@
+.header-page {
+  background-color: getColor('primary-white'); 
+  border-bottom: 1px solid getColor('border-header');
+}
+
+.header-page__container {
+  display: flex;
+  align-items: center;
+}
+
+.header-page__nav,
+.header-page__icontact {
+  @extend %list;
+  display: flex;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+};
+
+.header-page__icontact {
+  margin-left: auto;
+};
+
+.header-page__icon {
+  margin-right: 10px;
+  fill: currentColor;
+};
+
+
+// .site-nav__item {};
