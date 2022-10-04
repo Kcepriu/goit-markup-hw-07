@@ -1,10 +1,10 @@
-.benefits {
+.section-benefits {
   @extend %section;
 
   padding-bottom: 0;
 }
 
-.benefits__title {
+.section-benefits__title {
   @extend %visually-hidden;
 }
 

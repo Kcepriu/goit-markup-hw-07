@@ -1,7 +1,7 @@
 .logo {
   @extend %link;
-  
-  color: getColor('logo-header'); 
+
+  color: getColor('logo-header');
 
   font-family: raleway, sans-serif;
   font-weight: 700;
@@ -11,15 +11,4 @@
 
 .logo__accent {
   color: getColor('accent');
-}
-
-.header-page__logo {
-  margin-right: 93px;
-}
-
-.footer-page__logo {
-  margin-bottom: 20px;
-  display: inline-block;
-
-  color: getColor('white-primary');
 }
