@@ -28,8 +28,6 @@
   margin-right: 50px;
 }
 
-
-
 .header-page__link {
   @extend %link;
   display: block;
@@ -46,14 +44,10 @@
   }
 }
 
-
-
 .header-page__icon {
   margin-right: 10px;
   fill: currentColor;
 }
-
-;
 
 .header-page__link--current {
   position: relative;
@@ -75,25 +69,17 @@
   }
 }
 
-;
-
 // List i-contacts
 .header-page__list--second {
   margin-left: auto;
 }
 
-;
-
 .header-page__item--second:not(:last-child) {
   margin-right: 30px;
 }
-
-;
 
 .header-page__link--second {
   color: getColor('text-primary');
   display: flex;
   align-items: center;
 }
-
-;

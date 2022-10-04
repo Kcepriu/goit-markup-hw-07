@@ -9,7 +9,7 @@
   @extend %title-section;
 }
 
-.cards-team__list {
+.card-team__list {
   @extend %list;
 
   display: flex;
@@ -40,8 +40,6 @@
   border-bottom-left-radius: $border-radius-primary;
   box-shadow: #{getShadow('shadow-card-team')};
 }
-
-
 
 .card-team__content {
   margin-bottom: 16px;

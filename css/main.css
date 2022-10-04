@@ -17,22 +17,22 @@ p {
   margin-bottom: 0;
 }
 
-.card-team__img, .card-what__img {
+.portfolio-card__img, .card-team__img, .card-what__img {
   display: block;
   max-width: 100%;
 }
 
-.address__list, .card-client__list, .cards-team__list, .card-what__list, .card-benefit__list, .header-page__list, .socials__list {
+.portfolio-card__list, .filter_list, .address__list, .card-client__list, .card-team__list, .card-what__list, .card-benefit__list, .header-page__list, .socials__list {
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
-.addres__link, .card-client__link, .logo, .header-page__link, .socials__link {
+.portfolio-card__link, .addres__link, .card-client__link, .logo, .header-page__link, .socials__link {
   text-decoration: none;
 }
 
-.license__input, .form-footer__label, .section-benefits__title {
+.section-portfolio__title, .license__input, .form-footer__label, .section-benefits__title {
   position: absolute;
   white-space: nowrap;
   width: 1px;
@@ -46,7 +46,7 @@ p {
   margin: -1px;
 }
 
-.section-clients, .section-team, .section-what, .section-benefits {
+.section-portfolio, .section-clients, .section-team, .section-what, .section-benefits {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -60,7 +60,7 @@ p {
   text-align: center;
 }
 
-.button, .button--primary, .modal-window__button-send, .form-footer__button {
+.button, .filter_btn, .button--primary, .modal-window__button-send, .form-footer__button, .hero__button {
   min-width: 73px;
   padding: 6px 22px;
   color: #212121;
@@ -76,17 +76,18 @@ p {
   border-radius: 4px;
 }
 
-.button--primary, .modal-window__button-send, .form-footer__button {
+.button--primary, .modal-window__button-send, .form-footer__button, .hero__button {
   color: #ffffff;
   background-color: #2196f3;
   letter-spacing: 0.06em;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button--primary:hover, .modal-window__button-send:hover, .form-footer__button:hover,
+.button--primary:hover, .modal-window__button-send:hover, .form-footer__button:hover, .hero__button:hover,
 .button--primary:focus,
 .modal-window__button-send:focus,
-.form-footer__button:focus {
+.form-footer__button:focus,
+.hero__button:focus {
   background-color: #188ce8;
 }
 
@@ -274,7 +275,7 @@ p {
   text-transform: uppercase;
 }
 
-.card-benefit__wrap {
+.card-benefit__figure {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -315,7 +316,7 @@ p {
   background-color: #f5f4fa;
 }
 
-.cards-team__list {
+.card-team__list {
   display: flex;
   justify-content: space-between;
 }
@@ -675,4 +676,86 @@ p {
 }
 .license__input:checked + .license__label .license__icon-checkbox--nochecken {
   opacity: 0;
+}
+
+.filter_list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.filter_item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.filter_btn {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.filter_btn:hover, .filter_btn:focus {
+  color: #ffffff;
+  background-color: #2196f3;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.portfolio-card__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  font-size: 16px;
+  line-height: 1.88;
+}
+
+.portfolio-card__item {
+  flex-basis: calc((100% - 60px) / 3);
+}
+
+.portfolio-card__link {
+  display: block;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.portfolio-card__link:visited {
+  color: inherit;
+}
+.portfolio-card__link:hover, .portfolio-card__link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.portfolio-card__body {
+  padding: 20px 24px;
+  margin: 0;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.portfolio-card__figure {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-card__overlay {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  padding: 24px;
+  font-size: 18px;
+  line-height: 1.56;
+  color: #ffffff;
+  background-color: rgba(33, 150, 243, 0.9);
+  transform: translateY(101%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.portfolio-card__link:hover .portfolio-card__overlay, .portfolio-card__link:focus .portfolio-card__overlay {
+  transform: translateY(0);
+}
+
+.portfolio-card__title {
+  color: #212121;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  margin-bottom: 4px;
 }/*# sourceMappingURL=main.css.map */

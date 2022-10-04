@@ -29,6 +29,8 @@
 }
 
 .hero__button {
+  @extend .button--primary;
+
   padding: 10px 32px;
 
   font-weight: 700;
