@@ -16,7 +16,12 @@ p {
   margin-bottom: 0;
 }
 
-.card-benefit, .header-page__list {
+.card-what__img {
+  display: block;
+  max-width: 100%;
+}
+
+.card-what__list, .card-benefit__list, .header-page__list {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -40,9 +45,18 @@ p {
   margin: -1px;
 }
 
-.benefits {
+.what, .benefits {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+.what__title {
+  margin-bottom: 50px;
+  color: #212121;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
 }
 
 .button, .button--primary {
@@ -207,7 +221,7 @@ p {
   padding-bottom: 0;
 }
 
-.card-benefit {
+.card-benefit__list {
   display: flex;
   font-size: 14px;
   line-height: 1.71;
@@ -240,4 +254,28 @@ p {
   height: 120px;
   border-radius: 4px;
   background-color: #f5f4fa;
+}
+
+.card-what__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-what__item {
+  position: relative;
+}
+
+.card-what__title {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 27px 5px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: rgba(47, 48, 58, 0.8);
 }/*# sourceMappingURL=main.css.map */
