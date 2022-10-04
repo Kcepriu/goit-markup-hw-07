@@ -1,14 +1,19 @@
 $colors: (
-    'primary-text': #757575,
-    'title-text': #212121,
+    'text-primary': #757575,
+    'text-title': #212121,
+    'text-footer': rgb(255 255 255 / 0.6),
+    
     'accent': #2196f3,
     'logo-header': #000000,
-    'primary-white': #ffffff,
+    
+    'white-primary': #ffffff,
     'primary-color': #afb1b8,
-    'footer-text': rgb(255 255 255 / 0.6),
-    'primary-background': #ffffff,
-    'second-background': #f5f4fa,
-    'dark-background': #2f303a,
+    
+    'background-primary': #ffffff,
+    'background-second': #f5f4fa,
+    'background-dark': #2f303a,
+    'background-hover-btn': #188ce8,
+    
     'border-header': #ececec,
     'border-portfolio-border': #eeeeee,
 );
@@ -34,20 +39,22 @@ $shadows: (
   @return map-get($shadows, $key);
 };
 
-$primary-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-$primary-duration: 250ms;
+$duration-primary: 250ms;
+$timing-function-primary: cubic-bezier(0.4, 0, 0.2, 1);
+
   
 $count-items: 3;
-$primary-indent: 30px;
+$indent-primary: 30px;
 
 $padding-container: 15px;
 $padding-section: 94px;
+
 $width-container: 1200px;
 
-$primary-border-radius: 4px;
+$border-radius-primary: 4px;
 
-$hero-background-gradient: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
-$hero-background-image: url(../images/hero-background.jpg);
+$background-gradient-hero: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+$background-image-hero: url(../images/hero-background.jpg);
 
 
   

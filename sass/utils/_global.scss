@@ -2,7 +2,7 @@ body {
   font-family: roboto, sans-serif;
   letter-spacing: 0.03em;
 
-  color: getColor('primary-text');
+  color: getColor('text-primary');
 }
 
 h1,
@@ -17,9 +17,9 @@ p {
   margin-bottom: 0;
 }
 
-/* * {
-  outline: 1px solid red;
-} */
+// * {
+//   outline: 1px solid red;
+// } 
 
 %img {
   display: block;
@@ -51,6 +51,16 @@ p {
 }
 
 %section {
-  padding-top: $padding-section; 
+  padding-top: $padding-section;
   padding-bottom: $padding-section;
+}
+
+%title-section {
+  margin-bottom: 50px;
+
+  color: getColor('text-title');
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
 }

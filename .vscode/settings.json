@@ -11,12 +11,8 @@
             "savePath": "/css"
         }
     ],
-    "liveSassCompile.settings.excludeList": [
-       "**/node_modules/**",
-       ".vscode/**"
-    ],
-    "liveSassCompile.settings.generateMap": true,
-    "liveSassCompile.settings.autoprefix": [
-        "defaults"
-    ]
+    "[css][scss][less]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
+    }
 }
+

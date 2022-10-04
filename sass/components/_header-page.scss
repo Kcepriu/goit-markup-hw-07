@@ -8,8 +8,9 @@
   align-items: center;
 }
 
-.header-page__nav,
-.header-page__icontact {
+// header-page__list
+
+.header-page__list {
   @extend %list;
   display: flex;
 
@@ -19,8 +20,24 @@
   letter-spacing: 0.02em;
 };
 
-.header-page__icontact {
-  margin-left: auto;
+.header-page__item:not(:last-child) {
+  margin-right: 50px;
+};
+
+.header-page__link {
+  @extend %link;
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  
+  color: getColor('title-text');
+
+  transition: color $duration-primary $timing-function-primary;
+
+  &:hover,
+  &:focus {
+    color: getColor('accent');
+  }
 };
 
 .header-page__icon {
@@ -28,5 +45,39 @@
   fill: currentColor;
 };
 
+.header-page__link--current {
+    position: relative;
+    color: getColor('accent');
 
-// .site-nav__item {};
+  &::after {
+      content: '';
+
+      position: absolute;
+      left: 0;
+      bottom: -1px;
+
+      display: block;
+
+      width: 100%;
+      height: 4px;
+      border-radius: 2px;
+      background-color: currentColor;
+    }
+};
+
+// List i-contacts
+.header-page__list--second {
+  margin-left: auto;  
+};
+
+.header-page__item--second:not(:last-child) {
+  margin-right: 30px;
+};
+
+.header-page__link--second {
+  color: getColor('primary-text');
+  display: flex;
+  align-items: center;
+};
+
+
